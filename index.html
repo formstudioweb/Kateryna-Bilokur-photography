@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-
 <html lang="uk">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
-<meta content="Kateryna Bilokur Photography — сімейні, портретні, весільні зйомки, історії кохання та вагітність у Білгороді-Дністровському й Одесі." name="description"/>
-<meta content="#f8f5ee" name="theme-color"/>
-<title>Kateryna Bilokur Photography</title>
-<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,500;1,500&amp;display=swap" rel="stylesheet"/>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Kateryna Bilokur Photography — сімейні, портретні, весільні зйомки, історії кохання та вагітність у Білгороді-Дністровському й Одесі.">
+  <meta name="theme-color" content="#f8f5ee">
+  <title>Kateryna Bilokur Photography</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <style>
     :root{--ivory:#f4efe6;--paper:#faf8f3;--sand:#d9cdbc;--taupe:#8e8274;--olive:#6f745d;--ink:#1d1d1a;--muted:#5e5a53;--line:rgba(29,29,26,.14);--white:#fff;--max:1240px}
     *{box-sizing:border-box}
     html{scroll-behavior:smooth;scroll-padding-top:86px}
@@ -20,24 +19,25 @@
     img{display:block;width:100%;height:auto}
     a{color:inherit;text-decoration:none}
     button{font:inherit;cursor:pointer}
-    .container{width:min(calc(100% - 40px),var(--max));margin-inline:auto}
+    .container{width:min(calc(100% - 72px),var(--max));margin-inline:auto}
     .eyebrow{text-transform:uppercase;letter-spacing:.2em;font-size:.72rem;font-weight:600;color:var(--olive)}
     h1,h2,h3,p{margin-top:0}
-    h1,h2{font-family:"Playfair Display",serif;font-weight:500;line-height:1.04}
+    h1,h2,h3,.quote,.price,.faq-question{font-family:"Playfair Display",serif;font-weight:500}
+    h1,h2{line-height:1.04}
     h1{font-size:clamp(3.1rem,7vw,7rem);letter-spacing:-.045em}
     h2{font-size:clamp(2.45rem,5vw,4.8rem);letter-spacing:-.035em}
     h3{line-height:1.25}
     .lead{font-size:clamp(1.05rem,1.7vw,1.3rem);color:#484640}
     .button{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 27px;border:1px solid currentColor;text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;font-weight:600;transition:.25s ease}
     .button:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
-    .nav{position:fixed;inset:0 0 auto;z-index:30;padding:22px 0;color:#fff;transition:background .3s ease,border-color .3s ease,box-shadow .3s ease}
+    .nav{position:fixed;inset:0 0 auto;z-index:30;padding:26px 0;color:#fff;transition:background .3s ease,border-color .3s ease,box-shadow .3s ease}
     .nav.scrolled{background:rgba(29,29,26,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
     .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .brand{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;line-height:1.35}
-    .nav-links{display:flex;gap:25px;font-size:.82rem;align-items:center}
+    .brand{font-size:.9rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;line-height:1.35}
+    .nav-links{display:flex;gap:31px;font-size:.94rem;align-items:center}
     .nav-links a{opacity:.92;transition:opacity .2s ease}
     .nav-links a:hover{opacity:1}
-    .nav-instagram{border:1px solid rgba(255,255,255,.45);padding:10px 16px;font-size:.72rem;text-transform:uppercase;letter-spacing:.12em}
+    .nav-instagram{border:1px solid rgba(255,255,255,.45);padding:11px 18px;font-size:.78rem;text-transform:uppercase;letter-spacing:.12em}
     .nav-instagram:hover{background:#fff;color:var(--ink);opacity:1}
     .menu-btn{display:none;background:transparent;border:0;color:inherit;padding:8px;margin-right:-8px}
     .menu-btn span{display:block;width:27px;height:1px;background:currentColor;margin:6px 0;transition:transform .25s ease,opacity .25s ease}
@@ -59,7 +59,7 @@
     .intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
     .intro-copy p{color:var(--muted);font-size:1.03rem}
     .intro-copy p:last-child{margin-bottom:0}
-    .quote{font-family:"Playfair Display",serif;font-size:clamp(1.6rem,2.8vw,2.45rem);line-height:1.28}
+    .quote{font-size:clamp(1.6rem,2.8vw,2.45rem);line-height:1.28}
     .services{background:var(--ivory)}
     .section-head{display:flex;justify-content:space-between;gap:40px;align-items:flex-end;margin-bottom:58px}
     .section-head p{max-width:520px;margin-bottom:8px;color:var(--muted)}
@@ -74,17 +74,17 @@
     .story{padding:82px 0;border-top:1px solid var(--line)}
     .story:first-of-type{border-top:0;padding-top:0}
     .story-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:30px}
-    .story-head h3{font-family:"Playfair Display",serif;font-size:clamp(2rem,4vw,3.4rem);font-weight:500;margin:0}
+    .story-head h3{font-size:clamp(2rem,4vw,3.4rem);font-weight:500;margin:0}
     .story-head span{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--taupe)}
-    .gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;align-items:start}
-    .gallery figure{margin:0;overflow:hidden;background:#ece8df}
+    .gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
+    .gallery figure{margin:0;overflow:hidden;background:#ece8df;aspect-ratio:4/5}
     .gallery img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
     .gallery figure:hover img{transform:scale(1.018)}
-    .g-tall{grid-column:span 5;aspect-ratio:2/3}.g-square{grid-column:span 4;aspect-ratio:1}.g-wide{grid-column:span 7;aspect-ratio:3/2}.g-mid{grid-column:span 3;aspect-ratio:2/3}
+    .g-tall,.g-square,.g-wide,.g-mid{grid-column:auto;aspect-ratio:4/5}
     .about{background:#20211e;color:#f4f0e8}
     .about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:78px;align-items:center}
-    .about-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:stretch}
-    .about-photos img{width:100%;height:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+    .about-photos{display:grid;grid-template-columns:1fr .72fr;gap:14px;align-items:end}
+    .about-photos img:first-child{aspect-ratio:2/3;object-fit:cover}.about-photos img:last-child{aspect-ratio:2/3;object-fit:cover;margin-bottom:-40px}
     .about-copy p{color:rgba(255,255,255,.73)}.about-copy .lead{color:#f1eee7}.about-copy .eyebrow{color:#c8cbb8}
     .about-copy .button{border-color:rgba(255,255,255,.45)}
     .about-copy .button:hover{background:#fff;color:var(--ink);border-color:#fff}
@@ -96,9 +96,10 @@
     .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:52px}
     .price-card{border:1px solid var(--line);padding:34px;background:#fff;display:flex;flex-direction:column;transition:transform .25s ease,box-shadow .25s ease}
     .price-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(29,29,26,.07)}
-    .price-card.featured{background:var(--olive);color:#fff;border-color:var(--olive)}
+    .price-card.featured{background:var(--olive);color:#fff;border-color:var(--olive);position:relative}
+    .popular-badge{position:absolute;top:18px;right:18px;padding:6px 10px;border:1px solid rgba(255,255,255,.55);font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:#fff}
     .price-card h3{font-size:1.2rem;margin:6px 0 4px}
-    .price{font-family:"Playfair Display",serif;font-size:clamp(2.1rem,4vw,3.2rem);line-height:1.15;margin:10px 0 22px}
+    .price{font-size:clamp(2.1rem,4vw,3.2rem);line-height:1.15;margin:10px 0 22px}
     .price-sub{font-size:.88rem;color:var(--muted)}.featured .price-sub{color:rgba(255,255,255,.78)}
     .price-card ul{padding:0;margin:18px 0 25px;list-style:none;color:#5d5953}
     .featured ul{color:rgba(255,255,255,.82)}
@@ -108,7 +109,7 @@
     .faq{background:var(--ivory)}
     .faq-list{border-top:1px solid var(--line);margin-top:42px}
     .faq-item{border-bottom:1px solid var(--line)}
-    .faq-question{width:100%;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:24px 0;background:none;border:0;text-align:left;font-family:"Playfair Display",serif;font-size:clamp(1.15rem,2vw,1.45rem);font-weight:500;color:var(--ink)}
+    .faq-question{width:100%;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:24px 0;background:none;border:0;text-align:left;font-size:clamp(1.15rem,2vw,1.45rem);font-weight:500;color:var(--ink)}
     .faq-question span{flex-shrink:0;width:28px;height:28px;border:1px solid var(--line);display:grid;place-items:center;font-family:"DM Sans",sans-serif;font-size:1.1rem;line-height:1;transition:transform .25s ease}
     .faq-item.open .faq-question span{transform:rotate(45deg)}
     .faq-answer{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease}
@@ -139,7 +140,6 @@
       .service-row{grid-template-columns:50px 1fr}.service-row p{grid-column:2}
       .pricing-grid{grid-template-columns:repeat(2,1fr)}
       .about-photos{max-width:650px}
-      .g-tall{grid-column:span 7}.g-square{grid-column:span 5}.g-wide{grid-column:span 7}.g-mid{grid-column:span 5}
       .scroll-hint{display:none}
     }
     @media(max-width:600px){
@@ -147,375 +147,392 @@
       .hero{background-position:55% center}.hero-content{padding-bottom:38px}.hero-meta{font-size:.95rem}.hero-actions{width:100%;justify-content:flex-start}.hero-actions .button{width:100%}
       .brand{max-width:190px}.story{padding:60px 0}
       .gallery{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-      .gallery figure{grid-column:auto}
-      .gallery figure:nth-child(3n+1){grid-column:span 2}
-      .gallery .g-tall,.gallery .g-mid{aspect-ratio:2/3}
-      .gallery .g-square{aspect-ratio:1}
-      .gallery .g-wide{aspect-ratio:3/2}
+      .gallery figure,.gallery .g-tall,.gallery .g-mid,.gallery .g-square,.gallery .g-wide{grid-column:auto;aspect-ratio:4/5}
       .gallery img{height:100%;object-fit:cover}
-      .about-photos{grid-template-columns:1fr 1fr;gap:10px}.about-photos img{aspect-ratio:4/5}
+      .about-photos{grid-template-columns:1fr 1fr;gap:8px}.about-photos img:last-child{margin-bottom:-20px}
       .footer-grid{grid-template-columns:1fr}
       .price-card{padding:27px}
       .pricing-grid{grid-template-columns:1fr}
       .instagram-float{bottom:18px;right:18px;padding:0 16px;min-height:48px}
       .instagram-float span{display:none}
     }
-  
-
-:root{--ivory:#f4efe6;--paper:#faf8f3;--sand:#d9cdbc;--taupe:#8e8274;--olive:#6f745d;--ink:#1d1d1a;--muted:#5e5a53;--line:rgba(29,29,26,.14);--white:#fff;--max:1320px;--beige:#efe6db;--coffee:#5e4634;--beige-line:#d8c7b5;--red:#a63426}
-.container{width:min(calc(100% - 96px),var(--max));margin-inline:auto}
-.nav{padding:25px 0}.nav-links{gap:30px;font-size:.9rem}.nav-instagram{padding:11px 18px;font-size:.76rem}.brand{font-size:.84rem}
-.story{padding:82px 0}.story-head{margin-bottom:28px}.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.gallery figure,.gallery .gallery-item{margin:0;aspect-ratio:4/5;overflow:hidden;background:#ece8df;grid-column:auto}.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .55s ease,filter .35s ease;cursor:zoom-in}.gallery figure:hover img{transform:scale(1.035);filter:brightness(.96)}
-.price-card.featured{position:relative;background:var(--beige);color:var(--ink);border-color:var(--beige-line)}.price-card.featured .eyebrow{color:var(--coffee)}.price-card.featured .price-sub,.price-card.featured ul{color:var(--muted)}.price-card.featured .button{color:var(--coffee);border-color:var(--coffee)}.price-card.featured .button:hover{background:var(--coffee);color:#fff;border-color:var(--coffee)}.popular-badge{align-self:flex-start;margin-bottom:14px;padding:7px 12px;border:1px solid var(--beige-line);border-radius:999px;background:#f8f1e8;color:var(--coffee);font-size:.68rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase}
-.final-contact{position:relative;min-height:86vh;color:#fff;overflow:hidden;background:url("images/final-contact.jpg") center 48%/cover no-repeat;display:flex;align-items:center}.final-contact-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,14,11,.64) 0%,rgba(18,14,11,.42) 46%,rgba(18,14,11,.16) 72%,rgba(18,14,11,.28) 100%)}.final-contact-content{position:relative;z-index:2;width:min(calc(100% - 96px),var(--max));max-width:none;margin:0 auto;padding:118px 0 150px;text-align:left}.final-contact-content>*{max-width:680px}.final-contact .eyebrow{color:rgba(255,255,255,.82);margin-bottom:18px}.final-contact h2{margin-bottom:28px;color:#fff}.final-contact p{max-width:570px;margin:0 0 36px;color:rgba(255,255,255,.86);font-size:1.08rem}.final-button{border-color:rgba(255,255,255,.7);background:rgba(247,242,235,.9);color:var(--coffee);backdrop-filter:blur(4px)}.final-button:hover{background:#fff;color:var(--ink);border-color:#fff}.final-footer{position:absolute;z-index:3;left:50%;bottom:0;transform:translateX(-50%);width:min(calc(100% - 96px),var(--max));display:flex;justify-content:space-between;gap:30px;padding:25px 0;color:rgba(255,255,255,.84);border-top:1px solid rgba(255,255,255,.34);font-size:.78rem;letter-spacing:.03em}.final-footer a:hover{color:#fff}
-.lightbox{position:fixed;inset:0;z-index:80;background:rgba(15,14,12,.94);display:none;align-items:center;justify-content:center;padding:48px}.lightbox.open{display:flex}.lightbox img{max-width:min(92vw,1500px);max-height:88vh;width:auto;height:auto;object-fit:contain}.lightbox button{position:absolute;border:0;background:rgba(255,255,255,.1);color:#fff;width:48px;height:48px;font-size:2rem;display:grid;place-items:center}.lightbox-close{top:22px;right:22px}.lightbox-prev{left:22px;top:50%;transform:translateY(-50%)}.lightbox-next{right:22px;top:50%;transform:translateY(-50%)}
-@media(max-width:900px){.container{width:min(calc(100% - 44px),var(--max))}.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.final-contact{min-height:80vh;background-position:56% center}.final-contact-content{width:min(calc(100% - 44px),var(--max));padding:110px 0 145px}.final-contact-content>*{max-width:620px}.final-footer{width:min(calc(100% - 44px),var(--max))}}
-@media(max-width:600px){.container{width:min(calc(100% - 28px),var(--max))}.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.gallery figure,.gallery .gallery-item{aspect-ratio:4/5}.final-contact{min-height:82vh;background-position:61% center;align-items:flex-end}.final-contact-overlay{background:linear-gradient(180deg,rgba(18,14,11,.12) 10%,rgba(18,14,11,.42) 46%,rgba(18,14,11,.76) 100%)}.final-contact-content{width:min(calc(100% - 36px),var(--max));padding:210px 0 142px}.final-contact-content>*{max-width:100%}.final-contact h2{font-size:clamp(2.2rem,11vw,3.15rem);margin-bottom:22px}.final-contact p{font-size:.98rem;margin-bottom:30px}.final-button{width:100%;min-height:54px}.final-footer{width:min(calc(100% - 36px),var(--max));flex-direction:column;gap:7px;padding:17px 0;font-size:.72rem}.lightbox{padding:18px}.lightbox-prev{left:8px}.lightbox-next{right:8px}.lightbox-close{top:10px;right:10px}}
-</style>
+  </style>
 </head>
 <body>
 <header class="hero" id="home">
-<nav class="nav" id="nav">
-<div class="container nav-inner">
-<a class="brand" href="#home">Kateryna Bilokur Photography</a>
-<div class="nav-links">
-<a href="#about">Про мене</a>
-<a href="#portfolio">Портфоліо</a>
-<a href="#pricing">Пакети</a>
-<a href="#faq">Питання</a>
-<a href="#contact">Контакти</a>
-<a class="nav-instagram" href="https://www.instagram.com/_kb__photo_/" rel="noopener" target="_blank">Написати</a>
-</div>
-<button aria-expanded="false" aria-label="Відкрити меню" class="menu-btn"><span></span><span></span></button>
-</div>
-</nav>
-<div aria-hidden="true" class="mobile-menu">
-<a href="#about">Про мене</a>
-<a href="#portfolio">Портфоліо</a>
-<a href="#pricing">Пакети</a>
-<a href="#faq">Питання</a>
-<a href="#contact">Контакти</a>
-<a href="https://www.instagram.com/_kb__photo_/" rel="noopener" target="_blank">Написати мені</a>
-</div>
-<div class="container hero-content reveal">
-<div class="eyebrow" style="color:#fff;margin-bottom:16px">Kateryna Bilokur Photography</div>
-<div class="location">Білгород-Дністровський · Одеса</div>
-<h1>Я зберігаю не просто фотографії. Я зберігаю історії.</h1>
-<div class="hero-row">
-<p class="hero-meta">Живі сімейні історії, історії кохання, портрети, весілля та зйомки вагітності — природно, тепло й без зайвої постановки.</p>
-<div class="hero-actions">
-<a class="button" href="https://www.instagram.com/_kb__photo_/" rel="noopener" target="_blank">Забронювати зйомку</a>
-<a class="button secondary" href="#portfolio">Переглянути портфоліо</a>
-</div>
-</div>
-</div>
-<div aria-hidden="true" class="scroll-hint">Прокрутіть<span></span></div>
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">Kateryna Bilokur Photography</a>
+      <div class="nav-links">
+        <a href="#about">Про мене</a>
+        <a href="#portfolio">Портфоліо</a>
+        <a href="#pricing">Пакети</a>
+        <a href="#faq">Питання</a>
+        <a href="#contact">Контакти</a>
+        <a class="nav-instagram" href="https://www.instagram.com/_kb__photo_/" target="_blank" rel="noopener">Написати</a>
+      </div>
+      <button class="menu-btn" aria-label="Відкрити меню" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" aria-hidden="true">
+    <a href="#about">Про мене</a>
+    <a href="#portfolio">Портфоліо</a>
+    <a href="#pricing">Пакети</a>
+    <a href="#faq">Питання</a>
+    <a href="#contact">Контакти</a>
+    <a href="https://www.instagram.com/_kb__photo_/" target="_blank" rel="noopener">Написати мені</a>
+  </div>
+  <div class="container hero-content reveal">
+    <div class="eyebrow" style="color:#fff;margin-bottom:16px">Kateryna Bilokur Photography</div>
+    <div class="location">Білгород-Дністровський · Одеса</div>
+    <h1>Я зберігаю не просто фотографії. Я зберігаю історії.</h1>
+    <div class="hero-row">
+      <p class="hero-meta">Живі сімейні історії, історії кохання, портрети, весілля та зйомки вагітності — природно, тепло й без зайвої постановки.</p>
+      <div class="hero-actions">
+        <a class="button" href="https://www.instagram.com/_kb__photo_/" target="_blank" rel="noopener">Забронювати зйомку</a>
+        <a class="button secondary" href="#portfolio">Переглянути портфоліо</a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true">Прокрутіть<span></span></div>
 </header>
+
 <main>
-<section>
-<div class="container intro-grid reveal">
-<div>
-<div class="eyebrow">Фотографія як пам’ять</div>
-<h2>Моменти, які варто зберегти.</h2>
-<p class="quote">Фотографія несе у собі історію, спогади та красу моменту, який нам вдалося зловити.</p>
-</div>
-<div class="intro-copy">
-<p>Саме це стало головною ідеєю моєї роботи.</p>
-<p>Я не прагну створити просто красиві фотографії. Для мене важливо, щоб через багато років, переглядаючи свій альбом, ви змогли знову відчути той день, згадати запах літа, теплі обійми, щирий сміх і людей, які були поруч.</p>
-<p>Кожна фотосесія — це історія. І вона варта того, щоб бути збереженою.</p>
-</div>
-</div>
-</section>
-<section class="services" id="services">
-<div class="container">
-<div class="section-head reveal">
-<div>
-<div class="eyebrow">Напрями зйомки</div>
-<h2>Історії, які я знімаю</h2>
-</div>
-<p>Кожна зйомка будується навколо вас — вашого темпу, характеру та справжніх емоцій.</p>
-</div>
-<div class="service-list reveal">
-<a aria-label="Переглянути розділ: Історія кохання" class="service-row" href="#love"><span>01</span><h3>Історія кохання</h3><p>Ніжна історія про двох, близькість і моменти між кадрами.</p></a>
-<a aria-label="Переглянути розділ: Сімейна фотосесія" class="service-row" href="#family"><span>02</span><h3>Сімейна фотосесія</h3><p>Живі кадри про любов, обійми, дитинство й час разом.</p></a>
-<a aria-label="Переглянути розділ: Портретна фотосесія" class="service-row" href="#portrait"><span>03</span><h3>Портретна фотосесія</h3><p>Індивідуальна історія про ваш стан, характер і красу.</p></a>
-<a aria-label="Переглянути розділ: Весільна зйомка" class="service-row" href="#wedding"><span>04</span><h3>Весільна зйомка</h3><p>Щирі емоції та важливі деталі вашого особливого дня.</p></a>
-<a aria-label="Переглянути розділ: Вагітність" class="service-row" href="#pregnancy"><span>05</span><h3>Вагітність</h3><p>Тепла історія очікування, ніжності та початку нового життя.</p></a>
-</div>
-</div>
-</section>
-<section id="portfolio">
-<div class="container">
-<div class="section-head reveal">
-<div>
-<div class="eyebrow">Вибрані історії</div>
-<h2>Портфоліо</h2>
-</div>
-<p>Реальні історії, зняті у природному світлі та з увагою до почуттів, руху й деталей.</p>
-</div>
-<div class="portfolio-nav reveal">
-<a href="#family">Сімейна</a>
-<a href="#pregnancy">Вагітність</a>
-<a href="#portrait">Індивідуальна</a>
-<a href="#love">Історія кохання</a>
-<a href="#wedding">Весілля</a>
-</div>
-<div class="story" id="family">
-<div class="story-head reveal"><h3>Сімейна історія</h3><span>6 фотографій</span></div>
-<div class="gallery reveal">
-<figure class="gallery-item"><img alt="Сімейна історія — фотографія 1" decoding="async" loading="lazy" role="button" src="images/family-01.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Сімейна історія — фотографія 2" decoding="async" loading="lazy" role="button" src="images/family-02.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Сімейна історія — фотографія 3" decoding="async" loading="lazy" role="button" src="images/family-03.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Сімейна історія — фотографія 4" decoding="async" loading="lazy" role="button" src="images/family-04.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Сімейна історія — фотографія 5" decoding="async" loading="lazy" role="button" src="images/family-05.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Сімейна історія — фотографія 6" decoding="async" loading="lazy" role="button" src="images/family-06.jpg" tabindex="0"/></figure>
+  <section>
+    <div class="container intro-grid reveal">
+      <div>
+        <div class="eyebrow">Фотографія як пам’ять</div>
+        <h2>Моменти, які варто зберегти.</h2>
+        <p class="quote">Фотографія несе у собі історію, спогади та красу моменту, який нам вдалося зловити.</p>
+      </div>
+      <div class="intro-copy">
+        <p>Саме це стало головною ідеєю моєї роботи.</p>
+        <p>Я не прагну створити просто красиві фотографії. Для мене важливо, щоб через багато років, переглядаючи свій альбом, ви змогли знову відчути той день, згадати запах літа, теплі обійми, щирий сміх і людей, які були поруч.</p>
+        <p>Кожна фотосесія — це історія. І вона варта того, щоб бути збереженою.</p>
+      </div>
+    </div>
+  </section>
 
-</div>
-</div>
-<div class="story" id="pregnancy">
-<div class="story-head reveal"><h3>Вагітність</h3><span>6 фотографій</span></div>
-<div class="gallery reveal">
-<figure class="gallery-item"><img alt="Вагітність — фотографія 1" decoding="async" loading="lazy" role="button" src="images/pregnancy-01.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Вагітність — фотографія 2" decoding="async" loading="lazy" role="button" src="images/pregnancy-02.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Вагітність — фотографія 3" decoding="async" loading="lazy" role="button" src="images/pregnancy-03.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Вагітність — фотографія 4" decoding="async" loading="lazy" role="button" src="images/pregnancy-04.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Вагітність — фотографія 5" decoding="async" loading="lazy" role="button" src="images/pregnancy-05.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Вагітність — фотографія 6" decoding="async" loading="lazy" role="button" src="images/pregnancy-06.jpg" tabindex="0"/></figure>
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <div class="eyebrow">Напрями зйомки</div>
+          <h2>Історії, які я знімаю</h2>
+        </div>
+        <p>Кожна зйомка будується навколо вас — вашого темпу, характеру та справжніх емоцій.</p>
+      </div>
+      <div class="service-list reveal">
+        <a class="service-row" href="#love" aria-label="Переглянути розділ: Історія кохання"><span>01</span><h3>Історія кохання</h3><p>Ніжна історія про двох, близькість і моменти між кадрами.</p></a>
+        <a class="service-row" href="#family" aria-label="Переглянути розділ: Сімейна фотосесія"><span>02</span><h3>Сімейна фотосесія</h3><p>Живі кадри про любов, обійми, дитинство й час разом.</p></a>
+        <a class="service-row" href="#portrait" aria-label="Переглянути розділ: Портретна фотосесія"><span>03</span><h3>Портретна фотосесія</h3><p>Індивідуальна історія про ваш стан, характер і красу.</p></a>
+        <a class="service-row" href="#wedding" aria-label="Переглянути розділ: Весільна зйомка"><span>04</span><h3>Весільна зйомка</h3><p>Щирі емоції та важливі деталі вашого особливого дня.</p></a>
+        <a class="service-row" href="#pregnancy" aria-label="Переглянути розділ: Вагітність"><span>05</span><h3>Вагітність</h3><p>Тепла історія очікування, ніжності та початку нового життя.</p></a>
+      </div>
+    </div>
+  </section>
 
-</div>
-</div>
-<div class="story" id="portrait">
-<div class="story-head reveal"><h3>Індивідуальна зйомка</h3><span>6 фотографій</span></div>
-<div class="gallery reveal">
-<figure class="gallery-item"><img alt="Індивідуальна зйомка — фотографія 1" decoding="async" loading="lazy" role="button" src="images/portrait-01.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Індивідуальна зйомка — фотографія 2" decoding="async" loading="lazy" role="button" src="images/portrait-02.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Індивідуальна зйомка — фотографія 3" decoding="async" loading="lazy" role="button" src="images/portrait-03.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Індивідуальна зйомка — фотографія 4" decoding="async" loading="lazy" role="button" src="images/portrait-04.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Індивідуальна зйомка — фотографія 5" decoding="async" loading="lazy" role="button" src="images/portrait-05.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Індивідуальна зйомка — фотографія 6" decoding="async" loading="lazy" role="button" src="images/portrait-06.jpg" tabindex="0"/></figure>
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <div class="eyebrow">Вибрані історії</div>
+          <h2>Портфоліо</h2>
+        </div>
+        <p>Реальні історії, зняті у природному світлі та з увагою до почуттів, руху й деталей.</p>
+      </div>
+      <div class="portfolio-nav reveal">
+        <a href="#family">Сімейна</a>
+        <a href="#pregnancy">Вагітність</a>
+        <a href="#portrait">Індивідуальна</a>
+        <a href="#love">Історія кохання</a>
+        <a href="#wedding">Весілля</a>
+      </div>
 
-</div>
-</div>
-<div class="story" id="love">
-<div class="story-head reveal"><h3>Історія кохання</h3><span>6 фотографій</span></div>
-<div class="gallery reveal">
-<figure class="gallery-item"><img alt="Історія кохання — фотографія 1" decoding="async" loading="lazy" role="button" src="images/love-01.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Історія кохання — фотографія 2" decoding="async" loading="lazy" role="button" src="images/love-02.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Історія кохання — фотографія 3" decoding="async" loading="lazy" role="button" src="images/love-03.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Історія кохання — фотографія 4" decoding="async" loading="lazy" role="button" src="images/love-04.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Історія кохання — фотографія 5" decoding="async" loading="lazy" role="button" src="images/love-05.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Історія кохання — фотографія 6" decoding="async" loading="lazy" role="button" src="images/love-06.jpg" tabindex="0"/></figure>
+      <div class="story" id="family">
+        <div class="story-head reveal"><h3>Сімейна історія</h3><span>7 фотографій</span></div>
+        <div class="gallery reveal">
+          <figure class="g-tall"><img loading="lazy" decoding="async" src="images/family-01.jpg" alt="Сімейна історія — фотографія 1"></figure>
+          <figure class="g-square"><img loading="lazy" decoding="async" src="images/family-02.jpg" alt="Сімейна історія — фотографія 2"></figure>
+          <figure class="g-wide"><img loading="lazy" decoding="async" src="images/family-03.jpg" alt="Сімейна історія — фотографія 3"></figure>
+          <figure class="g-mid"><img loading="lazy" decoding="async" src="images/family-04.jpg" alt="Сімейна історія — фотографія 4"></figure>
+          <figure class="g-square"><img loading="lazy" decoding="async" src="images/family-05.jpg" alt="Сімейна історія — фотографія 5"></figure>
+          <figure class="g-tall"><img loading="lazy" decoding="async" src="images/family-06.jpg" alt="Сімейна історія — фотографія 6"></figure>
+          <figure class="g-wide"><img loading="lazy" decoding="async" src="images/family-07.jpg" alt="Сімейна історія — фотографія 7"></figure>
+        </div>
+      </div>
 
-</div>
-</div>
-<div class="story" id="wedding">
-<div class="story-head reveal"><h3>Весілля</h3><span>4 фотографій</span></div>
-<div class="gallery reveal">
-<figure class="gallery-item"><img alt="Весілля — фотографія 1" decoding="async" loading="lazy" role="button" src="images/wedding-01.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Весілля — фотографія 2" decoding="async" loading="lazy" role="button" src="images/wedding-02.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Весілля — фотографія 3" decoding="async" loading="lazy" role="button" src="images/wedding-03.jpg" tabindex="0"/></figure>
-<figure class="gallery-item"><img alt="Весілля — фотографія 4" decoding="async" loading="lazy" role="button" src="images/wedding-04.jpg" tabindex="0"/></figure>
+      <div class="story" id="pregnancy">
+        <div class="story-head reveal"><h3>Вагітність</h3><span>7 фотографій</span></div>
+        <div class="gallery reveal">
+          <figure class="g-tall"><img loading="lazy" decoding="async" src="images/pregnancy-01.jpg" alt="Вагітність — фотографія 1"></figure>
+          <figure class="g-square"><img loading="lazy" decoding="async" src="images/pregnancy-02.jpg" alt="Вагітність — фотографія 2"></figure>
+          <figure class="g-wide"><img loading="lazy" decoding="async" src="images/pregnancy-03.jpg" alt="Вагітність — фотографія 3"></figure>
+          <figure class="g-mid"><img loading="lazy" decoding="async" src="images/pregnancy-04.jpg" alt="Вагітність — фотографія 4"></figure>
+          <figure class="g-square"><img loading="lazy" decoding="async" src="images/pregnancy-05.jpg" alt="Вагітність — фотографія 5"></figure>
+          <figure class="g-tall"><img loading="lazy" decoding="async" src="images/pregnancy-06.jpg" alt="Вагітність — фотографія 6"></figure>
+          <figure class="g-wide"><img loading="lazy" decoding="async" src="images/pregnancy-07.jpg" alt="Вагітність — фотографія 7"></figure>
+        </div>
+      </div>
 
-</div>
-</div>
-</div>
-</section>
-<section class="about" id="about">
-<div class="container about-grid">
-<div class="about-photos reveal">
-<img alt="Фотограф Катерина Білокур" loading="lazy" src="images/photographer-01.jpg"/>
-<img alt="Катерина Білокур за роботою" loading="lazy" src="images/photographer-02.jpg"/>
-</div>
-<div class="about-copy reveal">
-<div class="eyebrow">Про мене</div>
-<h2>Мене звати Білокур Катерина.</h2>
-<p class="lead">Я фотограф із Білгорода-Дністровського та Одеси.</p>
-<p>Фотографією займаюся вже близько 7–8 років, а останні три роки повністю присвятила професійній фотографії.</p>
-<p>Найбільше люблю знімати живі сімейні історії та історії кохання. Саме в них народжуються моменти, які не можна повторити, але можна зберегти назавжди.</p>
-<p>Під час зйомки ми не просто позуємо — ми гуляємо, спілкуємося й проживаємо миті разом. Я допомагаю розслабитися, підкажу рухи й зроблю все, щоб процес був легким і приємним.</p>
-<a class="button" href="https://www.instagram.com/_kb__photo_/" rel="noopener" target="_blank">Написати мені</a>
-</div>
-</div>
-</section>
-<section class="text-section">
-<div class="container text-grid reveal">
-<div>
-<div class="eyebrow">Мій підхід</div>
-<h2>Фотографія — це не про постановку.</h2>
-</div>
-<div class="copy">
-<p class="quote">Вона про вас. Про ваші почуття. Про моменти між кадрами.</p>
-<p>Мені важливо, щоб вам було комфортно. Найкращі кадри з’являються тоді, коли людина забуває про камеру — і саме для цього я створюю спокійну, довірливу атмосферу на кожній зйомці.</p>
-</div>
-</div>
-</section>
-<section class="camera-note">
-<div class="container text-grid reveal">
-<div>
-<div class="eyebrow">Якщо ви соромитеся камери</div>
-<h2>Вам не потрібно вміти позувати.</h2>
-</div>
-<div class="copy">
-<p class="quote">«Ми не вміємо фотографуватися» — це говорить майже кожен мій клієнт.</p>
-<p>І це абсолютно нормально. Я підтримую розмову, жартую, знайомлюся ближче — і разом ми знаходимо красиві, природні кадри без напруження та зайвої постановки.</p>
-</div>
-</div>
-</section>
-<section id="pricing">
-<div class="container">
-<div class="section-head reveal">
-<div>
-<div class="eyebrow">Вартість</div>
-<h2>Пакети та ціни</h2>
-</div>
-<p>У кожен пакет входить підготовка до зйомки, допомога з образом і локацією та професійна обробка готових фотографій.</p>
-</div>
-<div class="pricing-grid">
-<article class="price-card reveal featured"><div class="popular-badge">Найчастіше обирають</div>
-<div class="eyebrow">Історія кохання</div>
-<h3>Історія про двох</h3>
-<div class="price">2800 грн</div>
-<div class="price-sub">1 година · або 30 хвилин — 1800 грн</div>
-<ul>
-<li>60–70 фотографій за годину</li>
-<li>20 фотографій за 30 хвилин</li>
-<li>авторська кольорокорекція</li>
-<li>ретуш кожної відібраної фотографії</li>
-<li>допомога у підборі образів</li>
-<li>допомога з вибором локації</li>
-<li>готовність: 20 або 10 днів</li>
-</ul>
-<a class="button" href="https://www.instagram.com/_kb__photo_/" rel="noopener" target="_blank">Обрати пакет</a>
-</article>
-<article class="price-card reveal">
-<div class="eyebrow">Сімейна фотосесія</div>
-<h3>Ваша сімейна історія</h3>
-<div class="price">3000 грн</div>
-<div class="price-sub">1 година · або 30 хвилин — 1800 грн</div>
-<ul>
-<li>60–70 фотографій за годину</li>
-<li>20 фотографій за 30 хвилин</li>
-<li>авторська кольорокорекція</li>
-<li>ретуш кожної фотографії</li>
-<li>допомога з образом</li>
-<li>допомога з вибором локації</li>
-<li>готовність: 20 або 10 днів</li>
-</ul>
-<a class="button" href="https://www.instagram.com/_kb__photo_/" rel="noopener" target="_blank">Забронювати сімейну зйомку</a>
-</article>
-<article class="price-card reveal">
-<div class="eyebrow">Портретна фотосесія</div>
-<h3>Індивідуальна історія</h3>
-<div class="price">2500 грн</div>
-<div class="price-sub">1 година · або 30 хвилин — 1800 грн</div>
-<ul>
-<li>60–70 фотографій за годину</li>
-<li>20 фотографій за 30 хвилин</li>
-<li>авторська кольорокорекція</li>
-<li>ретуш кожної фотографії</li>
-<li>допомога з образом</li>
-<li>допомога з вибором локації</li>
-<li>готовність: 20 або 10 днів</li>
-</ul>
-<a class="button" href="https://www.instagram.com/_kb__photo_/" rel="noopener" target="_blank">Обрати пакет</a>
-</article>
-<article class="price-card reveal">
-<div class="eyebrow">Зйомка вагітності</div>
-<h3>Історія очікування</h3>
-<div class="price">2500 грн</div>
-<div class="price-sub">1 година · або 30 хвилин — 1800 грн</div>
-<ul>
-<li>60–70 фотографій за годину</li>
-<li>20 фотографій за 30 хвилин</li>
-<li>авторська кольорокорекція</li>
-<li>ретуш кожної фотографії</li>
-<li>допомога з образом</li>
-<li>допомога з вибором локації</li>
-<li>готовність: 20 або 10 днів</li>
-</ul>
-<a class="button" href="https://www.instagram.com/_kb__photo_/" rel="noopener" target="_blank">Забронювати зйомку</a>
-</article>
-<article class="price-card reveal">
-<div class="eyebrow">Весільна зйомка</div>
-<h3>Ваш особливий день</h3>
-<div class="price">2500 грн / год</div>
-<div class="price-sub">Термін готовності обговорюється індивідуально</div>
-<ul>
-<li>кольорокорекція всіх відібраних фото</li>
-<li>ретуш кожного готового кадру</li>
-<li>допомога з таймінгом зйомки</li>
-<li>консультація перед весіллям</li>
-<li>кінематографічне відео — 1000 грн за готову хвилину</li>
-</ul>
-<a class="button" href="https://www.instagram.com/_kb__photo_/" rel="noopener" target="_blank">Обговорити весілля</a>
-</article>
-</div>
-</div>
-</section>
-<section class="faq" id="faq">
-<div class="container">
-<div class="section-head reveal">
-<div>
-<div class="eyebrow">Відповіді</div>
-<h2>Часті питання</h2>
-</div>
-<p>Усе, що варто знати перед бронюванням — від підготовки до готових фотографій.</p>
-</div>
-<div class="faq-list reveal">
-<div class="faq-item">
-<button aria-expanded="false" class="faq-question">Як забронювати дату?<span>+</span></button>
-<div class="faq-answer"><p>Напишіть мені в Instagram — обговоримо формат зйомки, локацію та зручну дату. Після підтвердження вносьте передоплату 500 грн, і дата буде за вами.</p></div>
-</div>
-<div class="faq-item">
-<button aria-expanded="false" class="faq-question">Скільки чекати на готові фото?<span>+</span></button>
-<div class="faq-answer"><p>Для зйомок тривалістю 1 годину — 20 днів, для 30 хвилин — 10 днів. Весільні зйомки обговорюються індивідуально. Усі фотографії проходять відбір, кольорокорекцію та ретуш.</p></div>
-</div>
-<div class="faq-item">
-<button aria-expanded="false" class="faq-question">Чи потрібно вміти позувати?<span>+</span></button>
-<div class="faq-answer"><p>Ні. Більшість моїх клієнтів кажуть, що не вміють фотографуватися — і це абсолютно нормально. Я допомагаю розслабитися, підкажу рухи та створю комфортну атмосферу на зйомці.</p></div>
-</div>
-<div class="faq-item">
-<button aria-expanded="false" class="faq-question">Що входить у вартість пакету?<span>+</span></button>
-<div class="faq-answer"><p>Зйомка, авторська кольорокорекція, ретуш кожної відібраної фотографії, допомога з образом і вибором локації. Кількість готових фото залежить від тривалості — від 20 до 70 кадрів.</p></div>
-</div>
-<div class="faq-item">
-<button aria-expanded="false" class="faq-question">Чи надаєте необроблені файли?<span>+</span></button>
-<div class="faq-answer"><p>Я віддаю лише завершений матеріал у своєму стилі. Необроблені файли не входять у вартість, але за бажанням можу надати їх для попереднього перегляду та самостійного вибору кадрів.</p></div>
-</div>
-<div class="faq-item">
-<button aria-expanded="false" class="faq-question">Як оплачуються студія та локації?<span>+</span></button>
-<div class="faq-answer"><p>Оренда студії та вхідні квитки до платних локацій оплачуються окремо. Я допомагаю обрати найкращий варіант під ваш бюджет і стиль зйомки.</p></div>
-</div>
-<div class="faq-item">
-<button aria-expanded="false" class="faq-question">Чи виїжджаєте в інші міста?<span>+</span></button>
-<div class="faq-answer"><p>Так. За межами міста клієнт організовує трансфер або окремо оплачує дорогу. Для зйомок в інших містах із перебуванням понад один день окремо оплачується проживання. Умови перенесення дати обговорюються індивідуально.</p></div>
-</div>
-</div>
-</div>
-</section>
-<section class="final-contact" id="contact" aria-label="Контакти Катерини Білокур">
-<div class="final-contact-overlay"></div>
-<div class="final-contact-content reveal">
-<div class="eyebrow">Збережімо вашу історію</div>
-<h2>Давайте створимо фотографії, до яких хочеться повертатися.</h2>
-<p>Напишіть мені в Instagram, щоб обговорити дату, формат і настрій вашої зйомки.</p>
-<a class="button final-button" href="https://www.instagram.com/_kb__photo_/" rel="noopener" target="_blank">Написати в Instagram</a>
-</div>
-<div class="final-footer">
-<a href="https://www.instagram.com/_kb__photo_/" rel="noopener" target="_blank">Instagram @_kb__photo_</a>
-<span>© 2026 Kateryna Bilokur Photography. Усі права захищені.</span>
-</div>
-</section>
+      <div class="story" id="portrait">
+        <div class="story-head reveal"><h3>Індивідуальна зйомка</h3><span>7 фотографій</span></div>
+        <div class="gallery reveal">
+          <figure class="g-tall"><img loading="lazy" decoding="async" src="images/portrait-01.jpg" alt="Індивідуальна зйомка — фотографія 1"></figure>
+          <figure class="g-square"><img loading="lazy" decoding="async" src="images/portrait-02.jpg" alt="Індивідуальна зйомка — фотографія 2"></figure>
+          <figure class="g-wide"><img loading="lazy" decoding="async" src="images/portrait-03.jpg" alt="Індивідуальна зйомка — фотографія 3"></figure>
+          <figure class="g-mid"><img loading="lazy" decoding="async" src="images/portrait-04.jpg" alt="Індивідуальна зйомка — фотографія 4"></figure>
+          <figure class="g-square"><img loading="lazy" decoding="async" src="images/portrait-05.jpg" alt="Індивідуальна зйомка — фотографія 5"></figure>
+          <figure class="g-tall"><img loading="lazy" decoding="async" src="images/portrait-06.jpg" alt="Індивідуальна зйомка — фотографія 6"></figure>
+          <figure class="g-wide"><img loading="lazy" decoding="async" src="images/portrait-07.jpg" alt="Індивідуальна зйомка — фотографія 7"></figure>
+        </div>
+      </div>
+
+      <div class="story" id="love">
+        <div class="story-head reveal"><h3>Історія кохання</h3><span>7 фотографій</span></div>
+        <div class="gallery reveal">
+          <figure class="g-tall"><img loading="lazy" decoding="async" src="images/love-01.jpg" alt="Історія кохання — фотографія 1"></figure>
+          <figure class="g-square"><img loading="lazy" decoding="async" src="images/love-02.jpg" alt="Історія кохання — фотографія 2"></figure>
+          <figure class="g-wide"><img loading="lazy" decoding="async" src="images/love-03.jpg" alt="Історія кохання — фотографія 3"></figure>
+          <figure class="g-mid"><img loading="lazy" decoding="async" src="images/love-04.jpg" alt="Історія кохання — фотографія 4"></figure>
+          <figure class="g-square"><img loading="lazy" decoding="async" src="images/love-05.jpg" alt="Історія кохання — фотографія 5"></figure>
+          <figure class="g-tall"><img loading="lazy" decoding="async" src="images/love-06.jpg" alt="Історія кохання — фотографія 6"></figure>
+          <figure class="g-wide"><img loading="lazy" decoding="async" src="images/love-07.jpg" alt="Історія кохання — фотографія 7"></figure>
+        </div>
+      </div>
+
+      <div class="story" id="wedding">
+        <div class="story-head reveal"><h3>Весілля</h3><span>5 фотографій</span></div>
+        <div class="gallery reveal">
+          <figure class="g-tall"><img loading="lazy" decoding="async" src="images/wedding-01.jpg" alt="Весілля — фотографія 1"></figure>
+          <figure class="g-square"><img loading="lazy" decoding="async" src="images/wedding-02.jpg" alt="Весілля — фотографія 2"></figure>
+          <figure class="g-wide"><img loading="lazy" decoding="async" src="images/wedding-03.jpg" alt="Весілля — фотографія 3"></figure>
+          <figure class="g-mid"><img loading="lazy" decoding="async" src="images/wedding-04.jpg" alt="Весілля — фотографія 4"></figure>
+          <figure class="g-square"><img loading="lazy" decoding="async" src="images/wedding-05.jpg" alt="Весілля — фотографія 5"></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-photos reveal">
+        <img loading="lazy" src="images/photographer-01.jpg" alt="Фотограф Катерина Білокур">
+        <img loading="lazy" src="images/photographer-02.jpg" alt="Катерина Білокур за роботою">
+      </div>
+      <div class="about-copy reveal">
+        <div class="eyebrow">Про мене</div>
+        <h2>Мене звати Білокур Катерина.</h2>
+        <p class="lead">Я фотограф із Білгорода-Дністровського та Одеси.</p>
+        <p>Фотографією займаюся вже близько 7–8 років, а останні три роки повністю присвятила професійній фотографії.</p>
+        <p>Найбільше люблю знімати живі сімейні історії та історії кохання. Саме в них народжуються моменти, які не можна повторити, але можна зберегти назавжди.</p>
+        <p>Під час зйомки ми не просто позуємо — ми гуляємо, спілкуємося й проживаємо миті разом. Я допомагаю розслабитися, підкажу рухи й зроблю все, щоб процес був легким і приємним.</p>
+        <a class="button" href="https://www.instagram.com/_kb__photo_/" target="_blank" rel="noopener">Написати мені</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-section">
+    <div class="container text-grid reveal">
+      <div>
+        <div class="eyebrow">Мій підхід</div>
+        <h2>Фотографія — це не про постановку.</h2>
+      </div>
+      <div class="copy">
+        <p class="quote">Вона про вас. Про ваші почуття. Про моменти між кадрами.</p>
+        <p>Мені важливо, щоб вам було комфортно. Найкращі кадри з’являються тоді, коли людина забуває про камеру — і саме для цього я створюю спокійну, довірливу атмосферу на кожній зйомці.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="camera-note">
+    <div class="container text-grid reveal">
+      <div>
+        <div class="eyebrow">Якщо ви соромитеся камери</div>
+        <h2>Вам не потрібно вміти позувати.</h2>
+      </div>
+      <div class="copy">
+        <p class="quote">«Ми не вміємо фотографуватися» — це говорить майже кожен мій клієнт.</p>
+        <p>І це абсолютно нормально. Я підтримую розмову, жартую, знайомлюся ближче — і разом ми знаходимо красиві, природні кадри без напруження та зайвої постановки.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <div class="eyebrow">Вартість</div>
+          <h2>Пакети та ціни</h2>
+        </div>
+        <p>У кожен пакет входить підготовка до зйомки, допомога з образом і локацією та професійна обробка готових фотографій.</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card featured reveal">
+          <div class="popular-badge">Популярне</div>
+          <div class="eyebrow" style="color:#dde1d1">Історія кохання</div>
+          <h3>Історія про двох</h3>
+          <div class="price">2800 грн</div>
+          <div class="price-sub">1 година · або 30 хвилин — 1800 грн</div>
+          <ul>
+            <li>60–70 фотографій за годину</li>
+            <li>20 фотографій за 30 хвилин</li>
+            <li>авторська кольорокорекція</li>
+            <li>ретуш кожної відібраної фотографії</li>
+            <li>допомога у підборі образів</li>
+            <li>допомога з вибором локації</li>
+            <li>готовність: 20 або 10 днів</li>
+          </ul>
+          <a class="button" href="https://www.instagram.com/_kb__photo_/" target="_blank" rel="noopener">Обрати пакет</a>
+        </article>
+        <article class="price-card reveal">
+          <div class="eyebrow">Сімейна фотосесія</div>
+          <h3>Ваша сімейна історія</h3>
+          <div class="price">3000 грн</div>
+          <div class="price-sub">1 година · або 30 хвилин — 1800 грн</div>
+          <ul>
+            <li>60–70 фотографій за годину</li>
+            <li>20 фотографій за 30 хвилин</li>
+            <li>авторська кольорокорекція</li>
+            <li>ретуш кожної фотографії</li>
+            <li>допомога з образом</li>
+            <li>допомога з вибором локації</li>
+            <li>готовність: 20 або 10 днів</li>
+          </ul>
+          <a class="button" href="https://www.instagram.com/_kb__photo_/" target="_blank" rel="noopener">Забронювати сімейну зйомку</a>
+        </article>
+        <article class="price-card reveal">
+          <div class="eyebrow">Портретна фотосесія</div>
+          <h3>Індивідуальна історія</h3>
+          <div class="price">2500 грн</div>
+          <div class="price-sub">1 година · або 30 хвилин — 1800 грн</div>
+          <ul>
+            <li>60–70 фотографій за годину</li>
+            <li>20 фотографій за 30 хвилин</li>
+            <li>авторська кольорокорекція</li>
+            <li>ретуш кожної фотографії</li>
+            <li>допомога з образом</li>
+            <li>допомога з вибором локації</li>
+            <li>готовність: 20 або 10 днів</li>
+          </ul>
+          <a class="button" href="https://www.instagram.com/_kb__photo_/" target="_blank" rel="noopener">Обрати пакет</a>
+        </article>
+        <article class="price-card reveal">
+          <div class="eyebrow">Зйомка вагітності</div>
+          <h3>Історія очікування</h3>
+          <div class="price">2500 грн</div>
+          <div class="price-sub">1 година · або 30 хвилин — 1800 грн</div>
+          <ul>
+            <li>60–70 фотографій за годину</li>
+            <li>20 фотографій за 30 хвилин</li>
+            <li>авторська кольорокорекція</li>
+            <li>ретуш кожної фотографії</li>
+            <li>допомога з образом</li>
+            <li>допомога з вибором локації</li>
+            <li>готовність: 20 або 10 днів</li>
+          </ul>
+          <a class="button" href="https://www.instagram.com/_kb__photo_/" target="_blank" rel="noopener">Забронювати зйомку</a>
+        </article>
+        <article class="price-card reveal">
+          <div class="eyebrow">Весільна зйомка</div>
+          <h3>Ваш особливий день</h3>
+          <div class="price">2500 грн / год</div>
+          <div class="price-sub">Термін готовності обговорюється індивідуально</div>
+          <ul>
+            <li>кольорокорекція всіх відібраних фото</li>
+            <li>ретуш кожного готового кадру</li>
+            <li>допомога з таймінгом зйомки</li>
+            <li>консультація перед весіллям</li>
+            <li>кінематографічне відео — 1000 грн за готову хвилину</li>
+          </ul>
+          <a class="button" href="https://www.instagram.com/_kb__photo_/" target="_blank" rel="noopener">Обговорити весілля</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <div class="eyebrow">Відповіді</div>
+          <h2>Часті питання</h2>
+        </div>
+        <p>Усе, що варто знати перед бронюванням — від підготовки до готових фотографій.</p>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Як забронювати дату?<span>+</span></button>
+          <div class="faq-answer"><p>Напишіть мені в Instagram — обговоримо формат зйомки, локацію та зручну дату. Після підтвердження вносьте передоплату 500 грн, і дата буде за вами.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Скільки чекати на готові фото?<span>+</span></button>
+          <div class="faq-answer"><p>Для зйомок тривалістю 1 годину — 20 днів, для 30 хвилин — 10 днів. Весільні зйомки обговорюються індивідуально. Усі фотографії проходять відбір, кольорокорекцію та ретуш.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Чи потрібно вміти позувати?<span>+</span></button>
+          <div class="faq-answer"><p>Ні. Більшість моїх клієнтів кажуть, що не вміють фотографуватися — і це абсолютно нормально. Я допомагаю розслабитися, підкажу рухи та створю комфортну атмосферу на зйомці.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Що входить у вартість пакету?<span>+</span></button>
+          <div class="faq-answer"><p>Зйомка, авторська кольорокорекція, ретуш кожної відібраної фотографії, допомога з образом і вибором локації. Кількість готових фото залежить від тривалості — від 20 до 70 кадрів.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Чи надаєте необроблені файли?<span>+</span></button>
+          <div class="faq-answer"><p>Я віддаю лише завершений матеріал у своєму стилі. Необроблені файли не входять у вартість, але за бажанням можу надати їх для попереднього перегляду та самостійного вибору кадрів.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Як оплачуються студія та локації?<span>+</span></button>
+          <div class="faq-answer"><p>Оренда студії та вхідні квитки до платних локацій оплачуються окремо. Я допомагаю обрати найкращий варіант під ваш бюджет і стиль зйомки.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Чи виїжджаєте в інші міста?<span>+</span></button>
+          <div class="faq-answer"><p>Так. За межами міста клієнт організовує трансфер або окремо оплачує дорогу. Для зйомок в інших містах із перебуванням понад один день окремо оплачується проживання. Умови перенесення дати обговорюються індивідуально.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="container reveal">
+      <div class="eyebrow" style="color:#fff">Збережімо вашу історію</div>
+      <h2>Моменти минають. Фотографії допомагають знову до них повернутися.</h2>
+      <p>Напишіть мені в Instagram, щоб обговорити вашу зйомку, бажану дату та формат.</p>
+      <a class="button" href="https://www.instagram.com/_kb__photo_/" target="_blank" rel="noopener">Забронювати дату</a>
+    </div>
+  </section>
 </main>
-<div aria-hidden="true" aria-label="Перегляд фотографії" class="lightbox" role="dialog">
-<button aria-label="Закрити" class="lightbox-close">×</button>
-<button aria-label="Попередня фотографія" class="lightbox-prev">‹</button>
-<img alt="" src=""/>
-<button aria-label="Наступна фотографія" class="lightbox-next">›</button>
-</div><a aria-label="Написати в Instagram" class="instagram-float" href="https://www.instagram.com/_kb__photo_/" rel="noopener" target="_blank">
-<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
-<span>Написати</span>
+
+<a class="instagram-float" href="https://www.instagram.com/_kb__photo_/" target="_blank" rel="noopener" aria-label="Написати в Instagram">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+  <span>Написати</span>
 </a>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand">Kateryna Bilokur Photography</div>
+        <p style="max-width:390px;margin-top:18px">Сімейні історії, історії кохання, портрети, весілля та зйомки вагітності у Білгороді-Дністровському й Одесі.</p>
+      </div>
+      <div>
+        <div class="footer-title">Навігація</div>
+        <p><a href="#about">Про мене</a></p>
+        <p><a href="#portfolio">Портфоліо</a></p>
+        <p><a href="#pricing">Пакети</a></p>
+        <p><a href="#faq">Питання</a></p>
+        <p><a href="#contact">Контакти</a></p>
+      </div>
+      <div>
+        <div class="footer-title">Контакти</div>
+        <p><a href="https://www.instagram.com/_kb__photo_/" target="_blank" rel="noopener">Instagram @_kb__photo_</a></p>
+        <p>Білгород-Дністровський · Одеса</p>
+        <p style="margin-top:18px"><a class="button" href="https://www.instagram.com/_kb__photo_/" target="_blank" rel="noopener" style="border-color:rgba(255,255,255,.35);color:#fff">Написати мені</a></p>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Kateryna Bilokur Photography. Усі права захищені.</div>
+  </div>
+</footer>
 
 <script>
 const menuBtn=document.querySelector('.menu-btn');
@@ -587,42 +604,6 @@ const observer=new IntersectionObserver((entries)=>{
 },{threshold:.08,rootMargin:'0px 0px -35px'});
 
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-
-
-const galleryImages=[...document.querySelectorAll('.gallery img')];
-const lightbox=document.querySelector('.lightbox');
-const lightboxImg=lightbox?.querySelector('img');
-let activeImageIndex=0;
-function showLightbox(index){
-  if(!lightbox||!lightboxImg||!galleryImages.length)return;
-  activeImageIndex=(index+galleryImages.length)%galleryImages.length;
-  const source=galleryImages[activeImageIndex];
-  lightboxImg.src=source.src;
-  lightboxImg.alt=source.alt;
-  lightbox.classList.add('open');
-  lightbox.setAttribute('aria-hidden','false');
-  document.body.style.overflow='hidden';
-}
-function closeLightbox(){
-  if(!lightbox)return;
-  lightbox.classList.remove('open');
-  lightbox.setAttribute('aria-hidden','true');
-  document.body.style.overflow='';
-}
-galleryImages.forEach((img,index)=>{
-  img.addEventListener('click',()=>showLightbox(index));
-  img.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();showLightbox(index)}});
-});
-lightbox?.querySelector('.lightbox-close')?.addEventListener('click',closeLightbox);
-lightbox?.querySelector('.lightbox-prev')?.addEventListener('click',()=>showLightbox(activeImageIndex-1));
-lightbox?.querySelector('.lightbox-next')?.addEventListener('click',()=>showLightbox(activeImageIndex+1));
-lightbox?.addEventListener('click',e=>{if(e.target===lightbox)closeLightbox()});
-document.addEventListener('keydown',e=>{
-  if(!lightbox?.classList.contains('open'))return;
-  if(e.key==='Escape')closeLightbox();
-  if(e.key==='ArrowLeft')showLightbox(activeImageIndex-1);
-  if(e.key==='ArrowRight')showLightbox(activeImageIndex+1);
-});
 </script>
 </body>
 </html>
